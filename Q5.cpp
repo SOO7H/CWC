@@ -19,9 +19,12 @@ int main()
                 v.push_back(make_pair(arr[i], arr[j]));
                 ans++;
             }
+	if(ans>0){
     cout<<"Number of inversions are: "<<ans<<"\n";
     cout<<"Pairs are: "<<"\n";
     for (int i = 0; i < n;i++)
-        cout<<"("<<v[i].first<<","<<v[i].second<<") ";
+        cout<<"("<<v[i].first<<","<<v[i].second<<") ";}
+	else
+		cout<<0;
 	return 0;
 }
